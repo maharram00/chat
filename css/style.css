@@ -1,0 +1,92 @@
+#chat {
+  width: 350px;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  border-top-left-radius: 30px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+#chat.active {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+#chat header {
+  background-color: #ac320d;
+  padding: 30px 15px;
+  color: #fff;
+  border-top-left-radius: 30px;
+  border-bottom: 1px solid black;
+}
+
+#chat header .top-head span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#chat header .top-head i {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+#chat header .bottom-head {
+  margin-top: 20px;
+}
+
+#chat main {
+  overflow-y: scroll;
+  height: 300px;
+  background-color: #dfd9d9;
+}
+
+#chat main .message {
+  width: 51%;
+  position: relative;
+  padding: 8px;
+  border-radius: 20px;
+  margin: 8px;
+  color: white;
+}
+
+#chat main .message .time {
+  position: absolute;
+  color: black;
+  top: 100%;
+  right: 15px;
+}
+
+#chat main .message.support {
+  background-color: #ff7b00;
+  float: left;
+}
+
+#chat main .message.user {
+  background-color: black;
+  float: right;
+}
+
+.mini-chat {
+  padding: 15px;
+  background-color: blue;
+  border-radius: 50%;
+  width: 60px;
+  text-align: center;
+  color: white;
+  position: fixed;
+  bottom: 15px;
+  right: 65px;
+}
+
+.mini-chat i {
+  font-size: 20px;
+}
+/*# sourceMappingURL=style.css.map */
